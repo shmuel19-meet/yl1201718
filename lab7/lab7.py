@@ -3,33 +3,31 @@ import random
 import math
 
 class rectangle(Turtle):
-	def __init__(self, x1, y1isTheBest, x2, y2isWorse):
+	def __init__(self, x1, y1isTheBest, width, height):
 		Turtle.__init__(self)
-		self.width = math.fabs(x1 - x2)
-		self.height = math.fabs(y1isTheBest-y2isWorse)
-
-		self.x1 = x1
-		self.x2 = x2
+		self.x1 = x
 		self.y1isTheBest = y1isTheBest
-		self.y2isWorse = y2isWorse
+		self.width = width
+		self.height = height
+
 
 	def getreckt(self):
-		for i in range(2):
+		self.x2 = self.xcor()
+		self.y2isWorse = self.ycor()
+		self.goto(x1+x2)
+		self.goto(y1isTheBest+y2isWorse)
 
-			self.forward(self.width)
-			self.left(90)
-			self.forward(self.height)
-			self.left(90)
 
 	def coll(self, legit, illiget):
-		xd = sqrt(pow((x1-x2),2))
-		yd = sqrt(pow((self.y1isTheBest-self.y2isWorse),2))
-		xc = self.width/2
-		yc = self.height/2
-		cc = self.width+self.height
-		if(xd >= legit.)
+		self.xayy = self.width/2
+		self.ylmao = self.height/2
+		self.side1 = 
+
+		
 
 legit = rectangle(50, 50, 200, 200)
+illegit = rectangle(-50, -50, -200, -200)
 legit.getreckt()
-
+illegit.getreckt()
 mainloop()
+#nayoung
