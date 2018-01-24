@@ -2,17 +2,18 @@ from turtle import *
 import math
 import random
 import time
-colormode(255)
-tracer(0)
+
+
 
 class Ball(Turtle):
-	def __init__(self, x, y, dx, dy, r, color):
+	def __init__(self, x, y, dx, dy, r):
 		Turtle.__init__(self)
 		self.x = x
 		self.y = y
 		self.dx = dx
 		self.dy = dy
 		self.r = r
+		self.shapesize(r/10)
 		r = random.randint(0, 255)
 		g = random.randint(0, 255)
 		b = random.randint(0, 255)
