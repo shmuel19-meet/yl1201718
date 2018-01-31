@@ -25,7 +25,7 @@ class Ball(Turtle):
 		current_x = self.xcor()
 		new_x = current_x+self.dx
 		current_y = self.ycor()
-		new_y = current_y+dy
+		new_y = current_y+self.dy
 		right_side_ball = new_x+self.r
 		left_side_ball = new_x-self.r
 		up_side_ball = new_y+self.r
